@@ -2,6 +2,7 @@ import arr from "./dataSet";
 
 const Row = (props) => {
   let count = 1;
+  console.log(props);
   return (
     <>
       {arr.map((f) => {
