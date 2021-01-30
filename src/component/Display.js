@@ -7,11 +7,14 @@ const Display = (props) => {
   const handleChange = (search, option) => {
     console.log(search, option);
   };
+  const handleFilter=(value,option)=>{
+    console.log(value,option);
+  }
 
   return (
     <>
       <Search handleChange={handleChange} />
-      <Filter/>
+      <Filter handleFilter={handleFilter}/>
 
       <Table responsive style={{ border: "1rem solid black", width: "100%" }}>
         <thead style={{ backgroundColor: "#ADD8E6" }}>

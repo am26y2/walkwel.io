@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 export const Search = (props) => {
   const [search, setSearch] = useState("");
   const [option, setOption] = useState("Fname");
