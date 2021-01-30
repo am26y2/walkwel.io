@@ -1,5 +1,3 @@
-import React from "react";
-
 import arr from "./dataSet";
 
 const Row = (props) => {
