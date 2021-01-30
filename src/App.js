@@ -1,13 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-import Display from './component/Display';
+import "./App.css";
+import Display from "./component/Display";
 function App() {
   return (
     <>
-    <div className="App">
-     <br/>
-     <Display/>
-    </div>
+      <div className="App">
+        <br />
+        <Display />
+      </div>
     </>
   );
 }
