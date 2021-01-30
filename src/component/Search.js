@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export const Search = () => {
+export const Search = (props) => {
   const [search, setSearch] = useState("");
   const [option, setOption] = useState("Fname");
   console.log(option, search);
@@ -13,7 +13,7 @@ export const Search = () => {
           setSearch(e.target.value);
         }}
       />
-      <button>Search</button>
+      <button onClick={()=>props.handleChange(search,option)}> Search</button>
       <label for="type">Search By:{option}</label>
       <select
         id="type"
