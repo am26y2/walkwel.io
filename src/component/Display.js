@@ -1,6 +1,5 @@
-import React from "react";
 import { Table } from "reactstrap";
-
+import { Filter } from "./Filter";
 import Row from "./Row";
 import { Search } from "./Search";
 
@@ -12,6 +11,7 @@ const Display = (props) => {
   return (
     <>
       <Search handleChange={handleChange} />
+      <Filter/>
 
       <Table responsive style={{ border: "1rem solid black", width: "100%" }}>
         <thead style={{ backgroundColor: "#ADD8E6" }}>

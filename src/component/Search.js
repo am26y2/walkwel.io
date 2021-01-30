@@ -22,6 +22,7 @@ export const Search = (props) => {
         onChange={(e) => setOption(e.target.value)}
       >
         <option value="Fname">Fname</option>
+        <option value="Lname">Lname</option>
         <option value="Email">Email</option>
       </select>
     </>
