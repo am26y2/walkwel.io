@@ -4,15 +4,18 @@ import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap
 import arr from './dataSet'
 import Row from './Row';
 import { Button } from 'react-bootstrap';
+import { Search } from './Search';
 
 const Display = (props) => {
     const [data,setData]=useState([]);
     const [dropdownOpen, setDropdownOpen] = useState(false);
     const toggle = () => setDropdownOpen(prevState => !prevState);
     const [dropdownText,setDropdownText]=useState("Search by criteria")
+    
 
   return (
    <> 
+   <Search/>
    <input style={{width:"70%",margin:"10px",height:"25px"}}/> 
    <Button style={{background:"#0275d8", padding:"5px",width:"7%"}}>Search</Button>
     {/* Drop down for the filter   */}
